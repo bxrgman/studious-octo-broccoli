@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Area Mercenary: HTML Shooter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="layout">
+    <header>
+      <h1>Area Mercenary</h1>
+      <p class="subtitle">A browser shooter inspired by 90s mission-based military arcade action.</p>
+    </header>
+
+    <section class="hud-panel">
+      <div id="statusLine"></div>
+      <div class="controls">
+        <strong>Controls:</strong>
+        <span>Move: Arrow Keys / WASD</span>
+        <span>Fire: J</span>
+        <span>Sub-weapon: K</span>
+        <span>Confirm: Enter</span>
+        <span>Back: Backspace</span>
+      </div>
+    </section>
+
+    <canvas id="game" width="960" height="540" aria-label="Shooter game canvas"></canvas>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
