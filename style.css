@@ -1,0 +1,67 @@
+:root {
+  color-scheme: dark;
+  --bg: #0f141d;
+  --panel: #1b2433;
+  --accent: #f6b300;
+  --text: #e8eef8;
+  --good: #49d685;
+  --warn: #f39c6b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #1d2b42 0%, var(--bg) 55%);
+  color: var(--text);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.layout {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0;
+  letter-spacing: 0.05em;
+}
+
+.subtitle {
+  margin-top: 0.35rem;
+  color: #aec0db;
+}
+
+.hud-panel {
+  background: color-mix(in oklab, var(--panel) 88%, black 12%);
+  border: 1px solid #2d3e59;
+  border-radius: 8px;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+#statusLine {
+  min-height: 1.2rem;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #c7d7ef;
+}
+
+canvas {
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid #344764;
+  background: #101722;
+  display: block;
+}
